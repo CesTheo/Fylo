@@ -1,0 +1,388 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS PERSO */
+
+.wrap{
+    margin: 0 auto;
+    padding: 0 0;
+    max-width: 1440px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@500&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 55px;
+    margin-bottom: 25px;
+}
+
+p.text{
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+p.bold{
+    font-weight: 700;
+}
+
+/* Form style */
+
+.form{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.form .tinybox{
+    width: 50%;
+}
+
+.form .input{
+    display: flex;
+    flex-direction: column;
+}
+
+.form input{
+    padding: 5px 15px 5px 5px;
+    height: 25px;
+    border-radius: 5px;
+    border: black 1px solid;
+    outline: none;
+}
+
+.form input:focus{
+    border: #eb4d4b solid 1px
+}
+
+.form .btn button{
+    height: 40px;
+    margin-left: 15px;
+    border: 0;
+    padding: 0 65px;
+    background-color: #3867d6;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form .btn button:hover{
+    background-color: #4b7bec;
+    transition-duration: 500ms;
+}
+
+.form span.error{
+    font-size: 14px;
+    margin: 10px 0;
+    color: #eb4d4b;
+}
+
+/* Header */
+
+header{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    justify-content: space-around;
+}
+
+/* Section 1 */
+
+#section1{
+    padding: 25px 0;
+}
+
+#section1 .wrap{
+    display: flex;
+    align-items: center;
+}
+
+#section1 .box{
+    width: 47%;
+}
+
+#section1 .box2 img{
+    width: 100%;
+    height: 100%;
+}
+
+#section1 .container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#s2background{
+    z-index: -1;
+    background-image: url("images/bg-curve-desktop.svg");
+    height: 100px;
+    width: 100%;
+    background-size: cover;
+}
+
+#section2 .bg-color{
+    padding: 100px 0;
+    background-color: #F8F8FE;
+}
+
+#section2 .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#section2 .container .box{
+    width: 47%;
+}
+
+#section2 .container .box2 img{
+    width: 100%;
+    height: 100%;
+}
+
+#section2 .text-green{
+    padding: 0 0;
+    margin: 0 0;
+}
+
+#section2 .text-icon{
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+    text-align: end;
+    padding: 0 0 2px 0;
+    border-bottom: 2px solid #3DA08F;
+    color: #3DA08F;
+    margin-bottom: 35px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#section2 .text-icon:hover{
+    border-bottom: 2px solid #1abc9c;
+    color: #1abc9c;
+}
+
+#section2 .text-icon img{
+    height: 24px;
+    width: 24px;
+}
+
+#section2 .card{
+    background-color: #fff;
+    width: 400px;
+    padding:  0 20px 20px 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: -1px 2px 28px -6px #95a5a6; 
+    box-shadow: -1px 2px 28px -6px #95a5a6;
+    cursor: pointer;
+}
+
+#section2 .card:active{
+    position: relative;
+    bottom: 2px;
+}
+
+#section2 .author{
+    display: flex;
+    margin-top: 15px;
+}
+
+#section2 .author .picture img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+#section2 .author .picture{
+    margin-right: 20px;
+}
+
+#section2 .card p.bold{
+    margin-bottom: 2px;
+}
+
+#section2 .card .name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#section2 .card .resume{
+    line-height: 30px;
+    text-align: justify;
+}
+
+#section2 .card .spec-1{
+    font-size: 50px;
+    margin-bottom: 20px;
+
+}
+
+#section3{
+    background-color: hsl(238, 22%, 44%);
+    color: #fff;
+    padding: 100px 0;
+}
+
+#section3 .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#section3 .box{
+    width: 45%;
+}
+
+#section3 .form{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+}
+
+#section3 .form button{
+    width: 250px;
+    margin-left: 0;
+    height: 60px;
+    padding: 0 15px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#section3 .error{
+    color: #bdc3c7;
+}
+
+#section3 .form input{
+    width: 400px;
+}
+
+#section3 .box1{
+    height: 150px;
+}
+
+#section3 .box1 p.text{
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    line-height: 20px;
+}
+
+#section4{
+    background-color: hsl(243, 87%, 12%);
+    color: #fff;
+    padding: 50px 0;
+}
+
+#section4 .logo img{
+    filter: invert(900%)brightness(5000%);
+}
+
+#section4 .logo{
+    margin-bottom: 50px;
+}
+
+#section4 .container{
+    display: flex;
+}
+
+#section4 .box{
+    width: 25%;
+}
+
+#section4 .box1 div{
+    display: flex;
+    margin-bottom: 20px ;
+}
+
+#section4 .box1 div img{
+    margin-right: 20px;
+}
+
+#section4 .mb p{
+    margin-bottom: 30px;
+}
+
+#section4 .box *{
+    cursor: pointer;
+}
+
+#section4 .box *:hover{
+    color: #82ccdd;
+    transition-duration: 300ms;
+}
+
+#section4 .box4 i{
+    font-size: 30px;
+    margin-right: 10px;
+}
