@@ -138,6 +138,7 @@ p.bold{
 header{
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
+    margin-bottom: 100px;
 }
 
 header nav{
@@ -147,11 +148,20 @@ header nav{
     height: 100px;
 }
 
+header img{
+    position: absolute;
+    margin: 20px 0 0 0;
+}
+
 header nav ul{
     display: flex;
     align-items: center;
-    width: 20%;
-    justify-content: space-around;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+header nav ul li{
+    margin: 0 15px;
 }
 
 /* Section 1 */
@@ -198,15 +208,15 @@ header nav ul{
 #section2 .container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #section2 .container .box{
-    width: 47%;
+    width: 46%;
 }
 
 #section2 .container .box2 img{
     width: 100%;
-    height: 100%;
 }
 
 #section2 .text-green{
@@ -385,4 +395,151 @@ header nav ul{
 #section4 .box4 i{
     font-size: 30px;
     margin-right: 10px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 980px)
+{
+    #section3 .form input{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    #section1 .wrap{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .wrap{
+        margin: 0 auto;
+        padding: 0 0;
+        width: 100%;
+    }
+    #section1{
+        margin-bottom: 50px;
+    }
+    #section1 h1,p{
+        text-align: center;
+    }
+    #section1 .box{
+        width: 80%;
+    }
+    #section1 .form{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    #section1 .form button{
+        height: 45px;
+        margin: 0;
+        padding: 5px 15px;
+        max-width: 250px;
+        width: 100%;
+        max-width: 100%;
+    }
+    #section1 .form input{
+        height: 25px;
+        margin: 0;
+        padding: 5px 15px;
+        max-width: 250px;
+        width: 90%;
+        max-width: 90%;
+    }
+    #section1 .container{
+        align-items: center;
+    }
+    .form .btn button{
+        margin-left: 0px;
+    }
+    #section2 .container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #section2 .container .box{
+        width: 80%;
+    }
+    #section2 .container .box2{
+        margin-bottom: 50px;
+    }
+    #s2background{
+        background-image: url("images/bg-curve-mobile.svg");
+    }
+    #section2 .container .box1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #section2 .container .box1 h1{
+        text-align: center;
+        font-size: 32px;
+    }
+    #section2 .container .box1 p{
+        text-align: justify;
+    }
+    #section3 .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #section3 .box{
+        width: 90%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #section3 .form{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    #section3 .form button{
+        height: 45px;
+        margin: 0;
+        padding: 5px 15px;
+        max-width: 250px;
+        width: 100%;
+        max-width: 100%;
+    }
+    #section3 .form input{
+        height: 25px;
+        margin: 0;
+        padding: 5px 15px;
+        max-width: 250px;
+        width: 90%;
+        max-width: 90%;
+    }
+    #section4 .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #section4 .box{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #section4 .box:nth-child(4){
+        flex-direction: row;
+        align-items: center;
+    }
+    #section4 .logo{
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width: 600px){
+    header nav ul li{
+        margin: 0 5px;
+    }
+    #section2 .card{
+        width: 100%;
+    }
+    #section3 .box{
+        height: 300px;
+    }
 }
